@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {
                       print('left dice cicked');
                       setState(() {
-                        leftdice = Random().nextInt(5) + 1;
+                        leftdice = Random().nextInt(6) + 1;
                       });
                     },
                   ),
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {
                       print('right dice cicked');
                       setState(() {
-                        rightdice = Random().nextInt(5) + 1;
+                        rightdice = Random().nextInt(6) + 1;
                       });
                     },
                   ),
@@ -75,8 +75,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                   onPressed: () {
                     setState(() {
-                      leftdice = Random().nextInt(5) + 1;
-                      rightdice = Random().nextInt(5) + 1;
+                      leftdice = Random().nextInt(6) + 1;
+                      rightdice = Random().nextInt(6) + 1;
                     });
                   },
                   color: Colors.blueGrey[900],
